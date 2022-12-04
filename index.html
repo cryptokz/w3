@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Source+Sans+Pro:wght@600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>Form registration</title>
+  </head>
+  <body>
+    <main>
+      <div class="circle"></div>
+      <div class="register-container">
+        <h1 class="form-title">Create New Account</h1>
+        <div class="form-fields">
+          <div class="form-field">
+            <input type="text" placeholder="Username" required />
+          </div>
+          <div class="form-field">
+            <input type="email" placeholder="Email Address" required />
+          </div>
+          <div class="form-field password">
+            <input
+              type="password"
+              id="password-input"
+              name="password"
+              placeholder="Password"
+              required
+            />
+            <a
+              href="#"
+              class="password-control"
+              onclick="return show_hide_password(this);"
+            ></a>
+          </div>
+          <div class="form-field password__sec">
+            <input
+              type="password"
+              id="pass-inputtwo"
+              placeholder="Confirm Password"
+              name="password__sec"
+              required
+            />
+            <a
+              href="#"
+              class="pass-control2"
+              onclick="return show_hide_passwordtwo(this);"
+            ></a>
+          </div>
+        </div>
+        <div class="form-btns">
+          <button class="button">
+            <a href="./page2.html" type="submit" class="button">sign up</a>
+          </button>
+          <div class="divider">or</div>
+          <a href="https://github.com/"  class="button btn-git" target="_blank">GitHub</a>
+        </div>
+      </div>
+    </main>
+    <script src="./game.js"></script>
+  </body>
+</html>

@@ -1,0 +1,223 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 'Roboto', sans-serif;
+}
+
+input {
+	height: 45px;
+	width: 100%;
+	font-size: 14px;
+	color: #305070;
+	line-height: 16px;
+	border: 2px solid #e9f2ff;
+	border-radius: 6px;
+	padding-left: 25px;
+}
+
+input:focus {
+	outline: none;
+	border: 2px solid #c1d9fd;
+}
+
+main {
+	background: #f1f5fe;
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.circle {
+	position: absolute;
+	z-index: 1;
+	width: 534px;
+	height: 534px;
+	border-radius: 50%;
+	background: #f7faff;
+	box-shadow: 0px 4px 70px 6px rgba(217, 229, 255, 0.25);
+}
+
+.form-title {
+	color: #305070;
+	font-weight: 500;
+	font-size: 20px;
+	line-height: 23px;
+	padding-bottom: 32px;
+	text-align: center;
+}
+
+.register-container {
+	opacity: 0;
+	position: relative;
+	z-index: 2;
+	max-width: 415px;
+	width: 100%;
+	background: #ffffff;
+	box-shadow: 0px 6px 50px rgba(217, 229, 255, 0.7);
+	border-radius: 20px;
+	padding-left: 30px;
+	padding-right: 30px;
+	padding-bottom: 38px;
+	animation-name: formShyngys;
+	animation-duration: 0.7s;
+	animation-timing-function: ease-in-out;
+	animation-delay: 0s;
+	animation-iteration-count: 1;
+	animation-fill-mode: forwards;
+}
+
+@keyframes formShyngys {
+	0% {
+		opacity: 0;
+	}
+
+	25% {
+		opacity: 0.25;
+	}
+
+	50% {
+		opacity: 0.5;
+	}
+
+	75% {
+		opacity: 0.75;
+	}
+
+	100% {
+		opacity: 1;
+	}
+}
+
+.form-field {
+	margin-bottom: 13px;
+}
+
+.button {
+	font-weight: bold;
+	font-size: 14px;
+	display: block;
+	height: 40px;
+	background: #247fff;
+	border-radius: 5px;
+	color: #fff;
+	text-transform: uppercase;
+	width: 100%;
+	text-align: center;
+	line-height: 35px;
+	cursor: pointer;
+}
+
+a.button {
+	text-decoration: none;
+}
+
+.btn-git {
+	text-transform: none;
+	color: #c6cfdc;
+	background: #f2f6ff;
+	transition-duration: 0.3s;
+}
+
+button:hover {
+	background-color: #0d6cf2;
+}
+
+.btn-git:hover {
+	transform: scale(1.1);
+	background-color: #3e5368;
+}
+
+.divider {
+	font-weight: 500;
+	font-size: 12px;
+	line-height: 14px;
+	color: #305070;
+	text-align: center;
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
+.password,
+.password__sec {
+	margin: 13px auto;
+	position: relative;
+}
+
+.password-control,
+.pass-control2 {
+	position: absolute;
+	top: 11px;
+	right: 6px;
+	display: inline-block;
+	width: 20px;
+	height: 20px;
+	background: url(https://snipp.ru/demo/495/view.svg) 0 0 no-repeat;
+}
+
+.password-control.view,
+.pass-control2.view {
+	background: url(https://snipp.ru/demo/495/no-view.svg) 0 0 no-repeat;
+}
+
+.forgot-pass,
+a {
+	height: 5px;
+	padding-bottom: 42px;
+	text-decoration: none;
+	font-size: 11px;
+	text-align: end;
+}
+
+/* 
+here styles of the game ball
+*/
+
+.grid {
+	position: absolute;
+	width: 560px;
+	height: 300px;
+	border: solid black 1px;
+	margin-top: 80px;
+}
+
+.block {
+	position: absolute;
+	width: 100px;
+	height: 20px;
+	background-color: blue;
+}
+
+.user {
+	position: absolute;
+	width: 100px;
+	height: 20px;
+	background-color: purple;
+}
+
+.ball {
+	position: absolute;
+	width: 20px;
+	height: 20px;
+	border-radius: 10px;
+	background-color: red;
+}
+
+.quit {
+	font-size: 500px;
+	padding-left: 30px;
+}
+
+.score {
+	padding-top: 20px;
+	padding-left: 30px;
+}
+
+/* 
+end
+*/
